@@ -1,0 +1,14 @@
+@use "../../node_modules/bootstrap/scss/bootstrap";
+
+@use './abstracts/variables.scss';
+@use './base/typography.scss';
+@use './base/base.scss';
+@use './layout/about.scss';
+@use './layout/highlight.scss';
+@use './layout/navigation.scss';
+@use './layout/carrousel.scss';
+@use './layout/footer.scss';
+@use './layout/testimonials.scss';
+@use './components/card.scss';
+@use './components/form.scss';
+

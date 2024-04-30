@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/fffc98518a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Viajes Chile</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top navigation justify-content-lg-between mx-lg-5 px-lg-5 px-2"
+      >
+    
+          <a class="navbar-brand navigation__brand" href="#">
+            <img
+              src="assets/img/viajes.svg"
+              alt="Logo Viajes Chile"
+              class="navigation__logo"
+            />
+            Viajes Chile
+          </a>
+          <button
+            class="navbar-toggler navbar-dark border-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!-- 
+                navbar-nav: alinea los elementos de la barra de navegación.
+                ms-auto: margen izquierdo automático, es decir, los elementos se alinean a la derecha.
+              -->
+              <li class="nav-item">
+                <!--nav-item: clase que se utiliza para los elementos de la barra de navegación -->
+                <a class="nav-link navigation__link" href="#">Inicio</a>
+                <!-- nav-link: para los enlaces de la barra de navegación-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation__link" href="#about-us"
+                  >Quiénes somos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation__link" href="#destacados"
+                  >Destacados</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation__link" href="#contact"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+      </nav>
+      <section class="carrousel">
+        <div id="carousel1" class="carousel slide carrousel__slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active carrousel__item">
+              <img
+                src="/assets/img/carousel1.jpg"
+                class="w-100 carrousel__img"
+                alt="paisaje de Chile"
+              />
+              <div class="carousel-caption carrousel__caption">
+                <h6>First slide label</h6>
+                <p>Texto descriptivo sobre el paisaje de Chile</p>
+              </div>
+            </div>
+            <div class="carousel-item carrousel__item">
+              <img
+                src="/assets/img/carousel2.jpg"
+                class="d-block w-100 carrousel__img"
+                alt="paisaje de Chile"
+              />
+              <div class="carousel-caption carrousel__caption">
+                <h6>Second slide label</h6>
+                <p>Texto descriptivo sobre el paisaje de Chile</p>
+              </div>
+            </div>
+            <div class="carousel-item carrousel__item">
+              <img
+                src="/assets/img/carousel3.jpg"
+                class="d-block w-100 carrousel__img"
+                alt="paisaje de Chile"
+              />
+              <div class="carousel-caption carrousel__caption">
+                <h6>Third slide label</h6>
+                <p>Texto descriptivo sobre el paisaje de Chile</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel1"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel1"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="about-us" class="about">
+        <h2>¿Quiénes somos?</h2>
+        <hr />
+        <div class="row align-items-center about__row">
+          <div class="col-sm-12 col-md-6 d-md-block d-none">
+            <img
+              src="/assets/img/quienes-somos.jpg"
+              alt="imagen del equipo"
+              class="about__img"
+            />
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <p class="py-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
+              felis sit amet quam efficitur ullamcorper. Vestibulum sed augue
+              in, nec ultricies odio fermentum. Pellentesque habitant morbi
+              tristique senectus et netus et malesuada fames ac turpis egestas,
+              nec ultricies odio fermentum. Pellentesque habitant morbi
+              tristique senectus et netus et malesuada fames ac turpis egestas.
+              <br />
+              <br />
+              Integer nec feugiat justo. Donec convallis odio sit amet massa
+              volutpat, ac suscipit elit placerat. Vestibulum ante ipsum primis.
+              nec ultricies odio fermentum. Pellentesque habitant morbi
+              tristique senectus et netus et malesuada fames ac turpis egestas.
+              in faucibus orci luctus et ultrices posuere cubilia curae;
+              Maecenas convallis purus in velit tempor, eget aliquam ex
+              consectetur.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="destacados" class="highlight">
+        <h2>Destacados</h2>
+        <hr />
+        <div class="row align-items-center py-3 w-100">
+          <!-- card 1 -->
+          <div class="col-sm-12 col-md-6">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="/assets/img/card1.jpg"
+                    class="img-fluid rounded card__img"
+                    alt="imagen de Región de los lagos"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Región de los Lagos</h5>
+                    <p class="card-text card__description">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <div class="card__bottom">
+                      <p class="card-text card__p">
+                        <i class="fa-solid fa-plane-up"></i>Vuelos desde
+                      </p>
+                      <h5 class="card__price">$159.990</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col-sm-12 col-md-6">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="/assets/img/card2.jpg"
+                    class="img-fluid rounded card__img"
+                    alt="Desierto de Atacama"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Desierto de Atacama</h5>
+                    <p class="card-text card__description">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <div class="card__bottom">
+                      <p class="card-text card__p">
+                        <i class="fa-solid fa-plane-up"></i>Vuelos desde
+                      </p>
+                      <h5 class="card__price">$189.990</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center w-100">
+          <!-- card 3 -->
+          <div class="col-sm-12 col-md-6">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="/assets/img/card3.jpg"
+                    class="img-fluid rounded card__img"
+                    alt="Norte Grande"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Norte Grande de Chile</h5>
+                    <p class="card-text card__description">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <div class="card__bottom">
+                      <p class="card-text card__p">
+                        <i class="fa-solid fa-plane-up"></i>Vuelos desde
+                      </p>
+                      <h5 class="card__price">$289.990</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="col-sm-12 col-md-6">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="/assets/img/card4.jpg"
+                    class="img-fluid rounded card__img"
+                    alt="Bosque mágico"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Bosque mágico</h5>
+                    <p class="card-text card__description">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <div class="card__bottom">
+                      <p class="card-text card__p">
+                        <i class="fa-solid fa-plane-up"></i>Vuelos desde
+                      </p>
+                      <h5 class="card__price">$259.990</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <h2>Testimonios</h2>
+        <hr />
+        <div class="testimonials__container">
+          <div class="testimonials__item">
+            <p class="testimonials__p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
+              felis sit amet quam efficitur ullamcorper. Vestibulum sed augue
+              in, nec ultricies odio fermentum.
+            </p>
+            <img
+              src="/assets/img/testimonio1.jpg"
+              alt="usuario"
+              class="testimonials__img"
+            />
+            <h6 class="testimonials__name">Mariela</h6>
+          </div>
+          <div class="testimonials__item">
+            <p class="testimonials__p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
+              felis sit amet quam efficitur ullamcorper. Vestibulum sed augue
+              in, nec ultricies odio fermentum.
+            </p>
+            <img
+              src="/assets/img/testimonio2.jpg"
+              alt="usuario"
+              class="testimonials__img"
+            />
+            <h6 class="testimonials__name">Christian</h6>
+          </div>
+          <div class="testimonials__item">
+            <p class="testimonials__p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
+              felis sit amet quam efficitur ullamcorper. Vestibulum sed augue
+              in, nec ultricies odio fermentum.
+            </p>
+            <img
+              src="/assets/img/testimonio3.jpg"
+              alt="usuario"
+              class="testimonials__img"
+            />
+            <h6 class="testimonials__name">Fernanda</h6>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact" class="contact">
+        <h2>Contacto</h2>
+        <hr />
+        <div class="row align-items-center w-100">
+            <div class="col-sm-12 col-md-6 py-2">
+                <form action="" class="contact__form">
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="name" class="form-label" >Nombre</label>
+                            <i class="fas fa-info-circle" data-toggle="tooltip" title="Ingrese su nombre"></i>
+                            <input type="text" class="form-control w-100" id="name" name="name" />
+                        </div>
+                        <div class="col-6">
+                            <label for="email" class="form-label" >Email</label>
+                            <i class="fas fa-info-circle" data-toggle="tooltip" title="Ingrese su correo electrónico"></i>
+                            <input type="email" class="form-control w-100" id="email" name="email" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label" >Mensaje</label>
+                        <i class="fas fa-info-circle" data-toggle="tooltip" title="Ingrese su mensaje"></i>
+                        <textarea class="form-control" id="message" name="message"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="check" />
+                        <label id="check" class="form-check-label form__check" for="check" data-toggle="modal" data-target="#termsModal">Acepto los términos y condiciones</label>
+                    </div>
+                    <button id="sendEmail" type="submit" class="btn btn-light">Enviar</button>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-6 py-3">
+                <div class="d-flex gap-3 py-2">
+                    <i class="fas fa-phone"></i>
+                    <p class="m-0">+56999887766</p>
+                </div>
+                <div class="d-flex gap-3 py-2">
+                    <i class="far fa-envelope"></i>
+                    <p class="m-0">contact@viajeschile.com</p>
+                </div>
+                <div class="d-flex gap-3 py-2">
+                    <i class="fab fa-linkedin"></i>
+                    <p class="m-0">ViajesChile</p>
+                </div>
+                <div class="d-flex gap-3 py-2">
+                    <i class="fab fa-instagram"></i>
+                    <p class="m-0">viajes_chile</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Términos y Condiciones</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-dark">
+              <!-- Contenido de los términos y condiciones -->
+              <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula magna quis erat molestie, nec aliquet elit accumsan. Vivamus mattis pretium felis, et gravida mi vestibulum vitae.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    <!-- Scripts de JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <!-- Scripts de Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

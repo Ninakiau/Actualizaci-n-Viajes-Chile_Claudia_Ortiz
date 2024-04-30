@@ -1,0 +1,19 @@
+@use "../abstracts/variables.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: variables.$raleway;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+p {
+  color: variables.$color-primary;
+  font-weight: 100px;
+}
+i{
+    padding-right: 0.5rem;
+}

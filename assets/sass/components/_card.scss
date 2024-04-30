@@ -1,0 +1,31 @@
+@use "../abstracts/variables.scss";
+.card{
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;    
+    }
+
+    &__description{
+        color: black;
+    }
+    &__bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__p{
+        color: black;
+        margin: 0;
+        padding-right: 0.5rem;
+        text-align: center;
+    }
+    
+    &__price{
+        margin: 0;
+    }
+   
+}

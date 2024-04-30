@@ -1,0 +1,28 @@
+@use "../abstracts/variables.scss";
+.navigation{
+    
+
+    &__logo{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &__brand{
+        color: variables.$color-primary;
+        text-decoration: none;
+        &:hover{
+            color: variables.$color-secondary;
+        } 
+    }
+
+    &__link{
+        color: variables.$color-primary;
+        text-decoration: none;
+        padding: 1rem;
+        &:hover{
+            color: variables.$color-secondary;
+        }   
+        
+    }
+
+}

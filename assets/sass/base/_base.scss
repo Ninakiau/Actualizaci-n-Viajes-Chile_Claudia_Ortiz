@@ -1,0 +1,21 @@
+@use "../abstracts/variables.scss";
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: variables.$color-background;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: 1800px) {
+        margin-inline:10rem;
+        padding-inline: 5rem;
+    }
+}
+
+hr{
+    width: 100%;
+    border: 1px;
+    color: variables.$color-primary;
+    border-style: solid;
+    margin-block: 1rem;
+}
